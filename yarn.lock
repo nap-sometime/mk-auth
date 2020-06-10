@@ -6973,6 +6973,11 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+single-spa-vue@^1.5.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/single-spa-vue/-/single-spa-vue-1.8.2.tgz#16a5eb6e6e0c4cbb35cd2736b81f78ffabc5fcc2"
+  integrity sha512-31rNJjyVWPlO+OZATL8tGP/R+PN7q0Kiw08BOxBkPYEqbO1jZLlJ/18+hshsT9kfzqnUT2TyNKjj8TLWM9GRFA==
+
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -7425,6 +7430,11 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+systemjs-webpack-interop@^1.1.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/systemjs-webpack-interop/-/systemjs-webpack-interop-1.2.1.tgz#70cce64a93ff646f52344eb560288d83362c9695"
+  integrity sha512-tNj9dACkQlNSAC+7d0MKwebXNt7M/3WDiQ0uj/1stBK061eSyaAlMcgp9t3EkYYrDp1ivxzAM4YhDCqPoai8Gg==
 
 table@^5.2.3:
   version "5.4.6"
@@ -7900,6 +7910,11 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+
+vue-cli-plugin-single-spa@~1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-single-spa/-/vue-cli-plugin-single-spa-1.1.2.tgz#7c5c045a6855d3b6476714831894adac8e3cd21b"
+  integrity sha512-/lh0cNrSiowIuuJBdwmxyoZzSIYIZH1h7EhzP3bz/mpx7E8S1RgXUPykFutJZO5qTAmlcwk3yiZC7JBVD/kbng==
 
 vue-eslint-parser@^7.0.0:
   version "7.1.0"
