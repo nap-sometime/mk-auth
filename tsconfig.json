@@ -8,7 +8,7 @@
     "**/*.vue"
 	],
 	"files": [
-    "ts-shim.d.ts"
+    "vue-shim.d.ts"
   ],
   "exclude": [
     "node_modules"
