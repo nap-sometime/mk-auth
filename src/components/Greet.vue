@@ -1,14 +1,11 @@
 <template>
 	<div>
-		<h4>Async component from Greet</h4>
+		<h4>Async component from Greet xx</h4>
 	</div>
 </template>
 
 <script lang="ts">
-// import Vue from 'vue';
-export default {
-	name: 'Greet',
-};
+export default {};
 </script>
 
 <style scoped>
