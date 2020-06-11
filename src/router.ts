@@ -1,5 +1,12 @@
-import Router from 'vue-router'
+import Router, { RouteConfig } from 'vue-router'
 
-const router = new Router()
+const routes: RouteConfig[] = [
+	{ path: '/', component: () => import('./components/HelloWorld.vue') }
+]
 
-export default router
+const router = new Router({
+	mode: 'history',
+	routes
+})
+
+export default router;
