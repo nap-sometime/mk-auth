@@ -1,24 +1,15 @@
 <template>
 	<div class="hello">
 		<img src="@/assets/logo.png" width="120" />
-		<h1>{{ msg }} render from @mk-auth</h1>
+		<h1>render from @mk-auth</h1>
 		<Greet />
 	</div>
 </template>
 
-<script>
-// import Greet from '@/components/Greet.vue';
-
+<script lang="ts">
 export default {
-	name: 'HelloWorld',
 	components: {
 		Greet: () => import('@/components/Greet.vue'),
-	},
-	props: {
-		msg: {
-			type: String,
-			default: 'Hi',
-		},
 	},
 };
 </script>
