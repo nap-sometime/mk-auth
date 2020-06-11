@@ -7,15 +7,16 @@ module.exports = {
 	productionSourceMap: false,
 	configureWebpack: {
 		output: {
-			libraryTarget: 'system',
 			path: path.resolve(__dirname, 'dist'),
-			// chunkFilename: '[name].bundle.js',
-		},
-		devtool: 'source-map',
-		module: {
-			rules: [{ parser: { system: false } }],
+			chunkFilename: 'js/[name].bundle.js',
 		},
 		externals: ['vue', 'vue-router', /^@ag1\/.+/],
+		resolve: {
+			alias: {
+				'~/*': path.resolve(__dirname, 'src/'),
+				'@/*': path.resolve(__dirname, 'src/'),
+			},
+		},
 		devServer: {
 			headers: {
 				'Access-Control-Allow-Origin': '*',
