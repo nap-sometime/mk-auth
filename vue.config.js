@@ -13,8 +13,8 @@ module.exports = {
 		externals: ['vue', 'vue-router', /^@ag1\/.+/],
 		resolve: {
 			alias: {
-				'~/*': path.resolve(__dirname, 'src/'),
-				'@/*': path.resolve(__dirname, 'src/'),
+				'@': path.resolve(__dirname, 'src'),
+				'~': path.resolve(__dirname, 'src'),
 			},
 		},
 		devServer: {
