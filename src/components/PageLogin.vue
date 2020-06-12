@@ -20,8 +20,8 @@ export default Vue.extend({
 		password: '',
 	}),
 	methods: {
-		onLogin() {
-			setAuthInfo({ username: this.username, password: this.password });
+		onLogin(): void {
+			setAuthInfo({ username: this.username, login_id: String(Date.now()) });
 			this.$router.replace('/home');
 		},
 	},

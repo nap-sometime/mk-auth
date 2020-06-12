@@ -1,11 +1,22 @@
 <template>
 	<div>
 		<h4>Async component from Greet xx</h4>
+		<button @click="logout">Log out</button>
 	</div>
 </template>
 
 <script lang="ts">
-export default {};
+import Vue from 'vue';
+import { removeAuthInfo } from '@/utils/auth';
+
+export default Vue.extend({
+	methods: {
+		logout() {
+			removeAuthInfo();
+			this.$router.push('/home');
+		},
+	},
+});
 </script>
 
 <style scoped>

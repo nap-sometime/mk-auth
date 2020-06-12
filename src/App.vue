@@ -4,14 +4,26 @@
 	</div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue';
+import { getAuthInfo } from '@/utils/auth';
+import { MetaInfo } from 'vue-meta';
+
+export default Vue.extend({
 	name: 'App',
-	metaInfo: {
-		title: 'Hi',
-		titleTemplate: '%s | Auth',
+	metaInfo(): MetaInfo {
+		return {
+			title: this.getTitle,
+			titleTemplate: '%s | Auth',
+		};
 	},
-};
+	computed: {
+		getTitle(): string {
+			const authInfo = getAuthInfo();
+			return (authInfo && authInfo.username) || 'hi';
+		},
+	},
+});
 </script>
 
 <style scoped>
