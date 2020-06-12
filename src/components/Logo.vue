@@ -2,16 +2,27 @@
 	<div class="hello">
 		<img src="@/assets/logo.png" width="120" />
 		<h1>render from @mk-auth</h1>
-		<Greet />
+		<button @click="toggle">show</button>
+		<Greet v-if="showInnerComponent" />
 	</div>
 </template>
 
-<script lang="ts">
-export default {
+<script>
+import Vue from 'vue';
+
+export default Vue.extend({
+	data: () => ({
+		showInnerComponent: false,
+	}),
 	components: {
 		Greet: () => import('@/components/Greet.vue'),
 	},
-};
+	methods: {
+		toggle() {
+			this.showInnerComponent = !this.showInnerComponent;
+		},
+	},
+});
 </script>
 
 <style scoped>
