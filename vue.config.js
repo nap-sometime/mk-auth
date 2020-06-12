@@ -10,7 +10,7 @@ module.exports = {
 			path: path.resolve(__dirname, 'dist'),
 			chunkFilename: 'js/[name].bundle.js',
 		},
-		externals: ['vue', 'vue-router', 'js-cookie', /^@ag1\/.+/],
+		externals: ['vue', 'vue-router', 'js-cookie', 'vue-meta', /^@ag1\/.+/],
 		resolve: {
 			alias: {
 				'@': path.resolve(__dirname, 'src'),

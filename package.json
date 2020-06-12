@@ -1,8 +1,8 @@
 {
   "name": "@mk/auth",
   "version": "0.1.0",
-	"private": true,
-	"license": "bsd-3-clause",
+  "private": true,
+  "license": "bsd-3-clause",
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "vue-cli-service serve",
@@ -14,6 +14,7 @@
     "single-spa-vue": "^1.5.2",
     "systemjs-webpack-interop": "^2.1.1",
     "vue": "^2.6.11",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.3.2"
   },
   "devDependencies": {
