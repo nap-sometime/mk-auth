@@ -1,7 +1,8 @@
 {
   "name": "@mk/auth",
   "version": "0.1.0",
-  "private": true,
+	"private": true,
+	"license": "bsd-3-clause",
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "vue-cli-service serve",
