@@ -17,10 +17,23 @@ export default Vue.extend({
 			titleTemplate: '%s | Auth',
 		};
 	},
+	mounted() {
+		this.logInterval();
+	},
 	computed: {
 		getTitle(): string {
 			const authInfo = getAuthInfo();
 			return (authInfo && authInfo.username) || 'hi';
+		},
+	},
+	methods: {
+		logInterval() {
+			let timer;
+			if (!timer) clearInterval(timer);
+
+			timer = setInterval(() => {
+				console.log(`${Date.now()} - @mk/auth`);
+			}, 5000);
 		},
 	},
 });
