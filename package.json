@@ -36,10 +36,5 @@
     "typescript": "^3.9.5",
     "vue-cli-plugin-single-spa": "~1.1.2",
     "vue-template-compiler": "^2.6.11"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  }
 }
