@@ -7,6 +7,10 @@
 <script>
 export default {
 	name: 'App',
+	metaInfo: {
+		title: 'Hi',
+		titleTemplate: '%s | Auth',
+	},
 };
 </script>
 
