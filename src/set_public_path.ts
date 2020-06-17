@@ -1,4 +1,6 @@
 import { setPublicPath } from 'systemjs-webpack-interop'
-const { name } = require('../package.json')
+import { getEnv } from './utils/get_env'
+
+const name = getEnv('VUE_APP_NAME')
 
 setPublicPath(name, 2)
