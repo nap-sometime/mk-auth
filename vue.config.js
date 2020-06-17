@@ -1,5 +1,8 @@
 const path = require('path');
 const { readFileSync } = require('fs');
+const { name: npm_package_name } = require('./package.json');
+
+process.env.VUE_APP_NAME = npm_package_name;
 
 module.exports = {
 	lintOnSave: false,
