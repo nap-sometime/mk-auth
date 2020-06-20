@@ -117,4 +117,6 @@ dist
 *.pem
 
 # Ignore yarn.lock, yarn.lock will manage by root-project only
-yarn.lock
+yarn.lock/.blackbox/pubring.gpg~
+/.blackbox/pubring.kbx~
+/.blackbox/secring.gpg
