@@ -120,3 +120,4 @@ dist
 yarn.lock/.blackbox/pubring.gpg~
 /.blackbox/pubring.kbx~
 /.blackbox/secring.gpg
+/env/runtest.env
