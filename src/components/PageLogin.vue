@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="main">
 		<form>
 			<label for="username">ชื่อผู้ใช้</label>
 			<input v-model.trim="username" type="text" name="username" />
@@ -27,3 +27,11 @@ export default Vue.extend({
 	},
 });
 </script>
+
+<style scoped>
+.main {
+	height: 100%;
+	width: 100%;
+	background: #888;
+}
+</style>
