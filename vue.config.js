@@ -33,7 +33,7 @@ module.exports = {
 	configureWebpack: {
 		output: {
 			path: path.resolve(__dirname, 'dist'),
-			chunkFilename: 'js/[name].bundle.js',
+			chunkFilename: 'js/_[name].js',
 		},
 		externals: ['vue', 'vue-router', 'js-cookie', 'vue-meta', /^@mk\/.+/],
 		resolve: {
