@@ -4,10 +4,12 @@ const { name: npm_package_name } = require('./package.json');
 
 process.env.VUE_APP_NAME = npm_package_name;
 
+const loadFile = (path = '') => readFileSync(path);
+
 module.exports = {
 	lintOnSave: false,
 	filenameHashing: false,
-	productionSourceMap: false,
+	productionSourceMap: true,
 	configureWebpack: {
 		output: {
 			path: path.resolve(__dirname, 'dist'),
@@ -29,8 +31,8 @@ module.exports = {
 			sockHost: 'localhost',
 			port: 8001,
 			https: {
-				cert: readFileSync(path.join(__dirname, '../cert/cert.pem')),
-				key: readFileSync(path.join(__dirname, '../cert/key.pem')),
+				cert: loadFile(path.join(__dirname, '../cert/cert.pem')),
+				key: loadFile(path.join(__dirname, '../cert/key.pem')),
 			},
 		},
 	},
