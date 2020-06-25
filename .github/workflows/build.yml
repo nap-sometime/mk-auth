@@ -2,25 +2,16 @@ name: CI
 
 on:
   push:
-    branches: [ runtest ]
+    branches: [ foo ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-			# - uses: actions/checkout@v2
+			- uses: actions/checkout@v2
 
-			# - name: Build app
-			#   run: |
-			#     yarn install
-			#     yarn build
-
-      - name: Install SSH Key
-        uses: shimataro/ssh-key-action@v2.0.3
-        with:
-          key: ${{ secrets.SSH_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
-          
-      - name: Test SSH cmd
-        run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo foo"
+			- name: Build app
+			  run: |
+			    yarn install
+			    yarn build
