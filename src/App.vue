@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import { getAuthInfo } from '@/utils/auth';
+import Vue from 'vue';
 import { MetaInfo } from 'vue-meta';
 
 export default Vue.extend({

@@ -1,5 +1,6 @@
-const path = require('path');
 const { readFileSync } = require('fs');
+const path = require('path');
+
 const { name: npm_package_name } = require('./package.json');
 
 // pass thought client env via VUE_APP_*

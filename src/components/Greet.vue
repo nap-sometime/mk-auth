@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import { removeAuthInfo } from '@/utils/auth';
+import Vue from 'vue';
 
 export default Vue.extend({
 	methods: {
