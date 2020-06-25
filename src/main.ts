@@ -5,6 +5,7 @@ import VueMeta from 'vue-meta'
 import singleSpa from 'single-spa-vue'
 import router from './router'
 import app from './App.vue'
+import '@/assets/styles/index.css'
 
 Vue.config.productionTip = false
 
