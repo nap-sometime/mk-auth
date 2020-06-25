@@ -1,11 +1,51 @@
 module.exports = {
 	root: true,
 	env: {
+		browser: true,
 		node: true,
 	},
-	extends: ['plugin:vue/essential', 'eslint:recommended', 'plugin:prettier/recommended'],
 	parserOptions: {
-		parser: 'babel-eslint',
+		parser: '@typescript-eslint/parser',
+		warnOnUnsupportedTypeScriptVersion: false,
 	},
-	rules: {},
+	extends: [
+		'plugin:vue/essential',
+
+		'plugin:import/errors',
+		'plugin:import/warnings',
+		'plugin:import/typescript',
+
+		'prettier',
+		'prettier/vue',
+		'plugin:prettier/recommended',
+	],
+	plugins: ['@typescript-eslint', 'import', 'prettier'],
+	rules: {
+		'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+		camelcase: 'off',
+		'import/default': 'off',
+		'import/no-unresolved': 'off',
+		'import/order': [
+			'error',
+			{
+				groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+				pathGroups: [
+					{
+						pattern: '~/**',
+						group: 'external',
+					},
+					{
+						pattern: '@/**',
+						group: 'external',
+					},
+				],
+				'newlines-between': 'always',
+				alphabetize: {
+					order: 'asc',
+					caseInsensitive: false,
+				},
+			},
+		],
+		'prettier/prettier': 'warn',
+	},
 };
